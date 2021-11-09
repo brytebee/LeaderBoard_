@@ -1,28 +1,29 @@
 import './style.css';
+
 const dommyList = [
   {
     userName: 'Matthew',
-    userScore: 33
+    userScore: 33,
   },
   {
     userName: 'Jane',
-    userScore: 38
+    userScore: 38,
   },
   {
     userName: 'Banny',
-    userScore: 28
+    userScore: 28,
   },
   {
     userName: 'Judas',
-    userScore: 20
+    userScore: 20,
   },
   {
     userName: 'Larry',
-    userScore: 27
+    userScore: 27,
   },
   {
     userName: 'Haji',
-    userScore: 39
+    userScore: 39,
   },
 ].sort((a, b) => b.userScore - a.userScore);
 
