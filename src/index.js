@@ -33,7 +33,7 @@ dommyList.forEach((item) => {
   const userName = document.createElement('span');
   const userScore = document.createElement('span');
 
-  li.classList = 'single-list-item';
+  li.classList = 'single-list-item l-height-2x';
   userName.classList = 'user-name';
   userScore.classList = 'user-score';
 
