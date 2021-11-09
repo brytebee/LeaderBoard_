@@ -24,7 +24,7 @@ const dommyList = [
     userName: 'Haji',
     userScore: 39
   },
-];
+].sort((a, b) => b.userScore - a.userScore);
 
 const root = document.querySelector('#root');
 
