@@ -1,4 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
-  color: red;
-  background-color: rgb(171, 199, 190);
+  padding: 10%;
+}
+
+main {
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.single-list-item {
+  line-height: 1.5;
+}
+
+.single-list-item:nth-child(odd) {
+  background-color: rgb(213, 219, 219);
+}
+
+.user-name {
+  padding: 10%;
+}
+
+#root {
+  border: 3px solid black;
+}
+
+#list-form {
+  flex-direction: column;
 }
