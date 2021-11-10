@@ -5,7 +5,7 @@ const baseUrl =
 
 const showScores = (scores) => {
   const root = document.querySelector('#root');
-
+  root.textContent = '';
   scores.forEach((item) => {
     const li = document.createElement('li');
     const userName = document.createElement('span');
@@ -58,5 +58,7 @@ document.querySelector('#submit').addEventListener('click', (e) => {
     postScore();
   }
 });
+
+document.querySelector('#refresh').addEventListener('click', () => getScores());
 
 window.addEventListener('load', () => getScores());
