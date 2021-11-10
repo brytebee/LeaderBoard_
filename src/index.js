@@ -28,3 +28,23 @@ const getScores = async () => {
   const scores = await res.json();
   showScores(scores.result);
 };
+
+const postScore = async () => {
+  const newScore = {
+    user: document.querySelector('#name').value,
+    score: document.querySelector('#score').value,
+  };
+
+  (
+    await fetch(baseUrl, {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json',
+      },
+      body: JSON.stringify(newScore),
+    })
+  ).json();
+
+  document.querySelector('#name').value = '';
+  document.querySelector('#score').value = '';
+};
