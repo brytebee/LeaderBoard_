@@ -1,7 +1,6 @@
 import './style.css';
 
-const baseUrl =
-  'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/x34jAfIEOe8sbnLr2WEb/scores';
+const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/x34jAfIEOe8sbnLr2WEb/scores';
 
 const showScores = (scores) => {
   const root = document.querySelector('#root');
@@ -50,10 +49,7 @@ const postScore = async () => {
 };
 
 document.querySelector('#submit').addEventListener('click', (e) => {
-  if (
-    document.querySelector('#name').value !== '' &&
-    document.querySelector('#score').value !== ''
-  ) {
+  if (document.querySelector('#name').value !== '' && document.querySelector('#score').value !== '') {
     e.preventDefault();
     postScore();
   }
