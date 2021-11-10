@@ -1,46 +1,24 @@
 import './style.css';
 
-const dommyList = [
-  {
-    userName: 'Matthew',
-    userScore: 33,
-  },
-  {
-    userName: 'Jane',
-    userScore: 38,
-  },
-  {
-    userName: 'Banny',
-    userScore: 28,
-  },
-  {
-    userName: 'Judas',
-    userScore: 20,
-  },
-  {
-    userName: 'Larry',
-    userScore: 27,
-  },
-  {
-    userName: 'Haji',
-    userScore: 39,
-  },
-].sort((a, b) => b.userScore - a.userScore);
+const baseUrl =
+  'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/x34jAfIEOe8sbnLr2WEb/scores';
 
-const root = document.querySelector('#root');
+const showScores = (scores) => {
+  const root = document.querySelector('#root');
 
-dommyList.forEach((item) => {
-  const li = document.createElement('li');
-  const userName = document.createElement('span');
-  const userScore = document.createElement('span');
+  scores.forEach((item) => {
+    const li = document.createElement('li');
+    const userName = document.createElement('span');
+    const userScore = document.createElement('span');
 
-  li.classList = 'single-list-item l-height-2x';
-  userName.classList = 'user-name';
-  userScore.classList = 'user-score';
+    li.classList = 'single-list-item l-height-2x';
+    userName.classList = 'user-name';
+    userScore.classList = 'user-score';
 
-  userName.textContent = item.userName;
-  userScore.textContent = item.userScore;
+    userName.textContent = item.user;
+    userScore.textContent = item.score;
 
-  li.append(userName, userScore);
-  root.appendChild(li);
-});
+    li.append(userName, userScore);
+    root.appendChild(li);
+  });
+};

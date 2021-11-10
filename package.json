@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "poststart": "webpack --watch",
+    "watch": "webpack --watch",
     "start": "webpack serve --open",
-    "build": "webpack"
+    "prestart": "webpack"
   },
   "keywords": [],
   "author": "",
