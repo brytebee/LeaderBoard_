@@ -48,3 +48,15 @@ const postScore = async () => {
   document.querySelector('#name').value = '';
   document.querySelector('#score').value = '';
 };
+
+document.querySelector('#submit').addEventListener('click', (e) => {
+  if (
+    document.querySelector('#name').value !== '' &&
+    document.querySelector('#score').value !== ''
+  ) {
+    e.preventDefault();
+    postScore();
+  }
+});
+
+window.addEventListener('load', () => getScores());
