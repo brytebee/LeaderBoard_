@@ -22,3 +22,9 @@ const showScores = (scores) => {
     root.appendChild(li);
   });
 };
+
+const getScores = async () => {
+  const res = await fetch(baseUrl);
+  const scores = await res.json();
+  showScores(scores.result);
+};
