@@ -66,6 +66,12 @@ button:focus {
   background-color: rgb(213, 219, 219);
 }
 
+#root > li:first-child {
+  animation: blinker 1s linear infinite;
+  background-color: rgb(188, 246, 130);
+  color: red;
+}
+
 .list-heading {
   justify-content: space-between;
 }
@@ -84,7 +90,13 @@ button:focus {
   align-self: flex-end;
 }
 
-@media screen and (max-width: 600px) {
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 675px) {
   body {
     text-align: center;
   }

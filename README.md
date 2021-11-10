@@ -6,7 +6,7 @@ The leaderboard website displays scores submitted by different players. It also 
 ![image](https://user-images.githubusercontent.com/27709832/141006979-993d9719-6ea2-44c9-bcb5-0737300dc309.png)
 
 ## Live Demo
-[Live Page](https://brytebee.github.io/LeaderBoard_/)
+View the [Live Page here](https://brytebee.github.io/LeaderBoard_/)
 
 ## Built With
 

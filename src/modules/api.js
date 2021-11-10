@@ -23,7 +23,7 @@ const showScores = (scores) => {
 const getScores = async () => {
   const res = await fetch(baseUrl);
   const scores = await res.json();
-  showScores(scores.result);
+  showScores(scores.result.sort((a, b) => b.score - a.score));
 };
 
 const postScore = async () => {
