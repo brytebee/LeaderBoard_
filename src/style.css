@@ -5,6 +5,8 @@
 
 body {
   padding: 4%;
+  background-color: #e1b1ff;
+  font-family: 'Leckerli One', cursive;
 }
 
 h1 {
@@ -63,7 +65,7 @@ button:focus {
 }
 
 .single-list-item:nth-child(odd) {
-  background-color: rgb(213, 219, 219);
+  background-color: white;
 }
 
 #root > li:first-child {
