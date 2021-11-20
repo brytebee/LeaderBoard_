@@ -27,9 +27,13 @@ input {
   margin-bottom: 16px;
 }
 
+.b-shadow {
+  box-shadow: 4px 3px rgb(54, 46, 46), -3px -2px rgb(230, 226, 226);
+}
+
 button {
   width: 10rem;
-  box-shadow: 2px 2px;
+  background-color: #e1b1ff;
 }
 
 button:hover {
@@ -37,7 +41,7 @@ button:hover {
 }
 
 button:focus {
-  background-color: cadetblue;
+  background-color: rgb(128, 168, 170);
 }
 
 .b-radius {
@@ -78,7 +82,7 @@ button:focus {
   justify-content: space-between;
 }
 
-.user-name {
+.pad-05 {
   padding: 5%;
 }
 

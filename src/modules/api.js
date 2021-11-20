@@ -1,4 +1,5 @@
-const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/x34jAfIEOe8sbnLr2WEb/scores';
+const baseUrl =
+  'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/x34jAfIEOe8sbnLr2WEb/scores';
 
 const showScores = (scores) => {
   const root = document.querySelector('#root');
@@ -9,7 +10,7 @@ const showScores = (scores) => {
     const userScore = document.createElement('span');
 
     li.classList = 'single-list-item l-height-2x';
-    userName.classList = 'user-name';
+    userName.classList = 'user-name pad-05';
     userScore.classList = 'user-score';
 
     userName.textContent = item.user;
