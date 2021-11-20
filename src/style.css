@@ -5,6 +5,8 @@
 
 body {
   padding: 4%;
+  background-color: #e1b1ff;
+  font-family: 'Leckerli One', cursive;
 }
 
 h1 {
@@ -25,9 +27,13 @@ input {
   margin-bottom: 16px;
 }
 
+.b-shadow {
+  box-shadow: 4px 3px rgb(54, 46, 46), -3px -2px rgb(230, 226, 226);
+}
+
 button {
   width: 10rem;
-  box-shadow: 2px 2px;
+  background-color: #e1b1ff;
 }
 
 button:hover {
@@ -35,7 +41,7 @@ button:hover {
 }
 
 button:focus {
-  background-color: cadetblue;
+  background-color: rgb(128, 168, 170);
 }
 
 .b-radius {
@@ -63,14 +69,20 @@ button:focus {
 }
 
 .single-list-item:nth-child(odd) {
-  background-color: rgb(213, 219, 219);
+  background-color: white;
+}
+
+#root > li:first-child {
+  animation: blinker 1s linear infinite;
+  background-color: rgb(188, 246, 130);
+  color: red;
 }
 
 .list-heading {
   justify-content: space-between;
 }
 
-.user-name {
+.pad-05 {
   padding: 5%;
 }
 
@@ -82,4 +94,39 @@ button:focus {
 
 #submit {
   align-self: flex-end;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  body {
+    text-align: center;
+  }
+
+  main {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  header > h3 {
+    margin-bottom: 16px;
+  }
+
+  .list-heading {
+    flex-direction: column;
+  }
+
+  #list-form {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+
+  #refresh,
+  #submit {
+    align-self: center;
+  }
 }

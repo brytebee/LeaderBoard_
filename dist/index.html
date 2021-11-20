@@ -5,28 +5,27 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LeaderBoard</title>
-<script defer src="main.js"></script></head>
+<script defer src="/LeaderBoard_/main.js"></script></head>
 
 <body>
   <h1>LeaderBoard</h1>
   <main class="d-flex">
     <section class="list">
       <header class="list-heading heading d-flex">
-        <h2>Recent Scores</h2>
-        <button class="l-height-2x b-radius" id="refresh">Refresh</button>
+        <h3>Recent Scores</h3>
+        <button class="l-height-2x b-radius b-shadow" id="refresh">Refresh</button>
       </header>
-      <ul id="root" class="thick-border b-radius">
-        <li class="single-list-item l-height-2x"><span class="user-name">Musa</span> <span class="user-score">30</span>
-        </li>
+      <ul id="root" class="thick-border b-radius b-shadow">
+        <!-- <li></li> -->
       </ul>
     </section>
-    <form action="" id="list-form" class="d-flex">
+    <form action="" id="list-form" class="d-flex thick-border b-radius pad-05 b-shadow">
       <h3 class="heading">Add your score</h3>
       <input class="l-height-2x thick-border b-radius" type="text" name="name" id="name" placeholder="Your name"
         required>
       <input class="l-height-2x thick-border b-radius" type="text" name="score" id="score" placeholder="Your score"
         required>
-      <button class="l-height-2x b-radius" type="submit" id="submit">Submit</button>
+      <button class="l-height-2x b-radius b-shadow" type="submit" id="submit">Submit</button>
     </form>
   </main>
 </body>
