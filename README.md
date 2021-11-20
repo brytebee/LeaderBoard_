@@ -3,10 +3,10 @@
 The leaderboard website displays scores submitted by different players. It also allows users to submit their score. All data is preserved thanks to the external Leaderboard API service.
 
 ## Screenshot
-![image](https://user-images.githubusercontent.com/27709832/141006979-993d9719-6ea2-44c9-bcb5-0737300dc309.png)
+![image](https://user-images.githubusercontent.com/27709832/142742225-d0caa911-08f8-4ac9-b699-4195c8d5dab4.png)
 
 ## Live Demo
-View the [Live Page here](https://brytebee.github.io/LeaderBoard_/)
+View the [Live Page](https://brytebee.github.io/LeaderBoard_/) here ☕
 
 ## Built With
 
