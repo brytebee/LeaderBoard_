@@ -1,4 +1,4 @@
-const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/x34jAfIEOe8sbnLr2WEb/scores';
+const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/LIANXtb1Q9usK68XJIaM/scores';
 
 const showScores = (scores) => {
   const root = document.querySelector('#root');
